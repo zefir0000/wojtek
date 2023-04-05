@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<%- include('../views/components/head.ejs'); -%>
+
+<!-- body -->
+
+<body class="main-layout">
+
+	<!-- loader  -->
+	<div class="loader_bg">
+		<div class="loader"><img src="images/loading.gif" alt="#" /></div>
+	</div>
+	<!-- end loader -->
+	<div class="wrapper">
+		<!-- end loader -->
+		<%- include('../views/components/menu.ejs'); -%>
+
+		<div id="content">
+	    <%- include('../views/components/header.ejs'); -%>
+
+			<!-- banner -->
+			<div id="myCarousel" class="carousel slide banner_main" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="container-fluid">
+							<div class="carousel-caption">
+								<div class="row">
+									<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+										<div class="text-bg">
+											<h1 >Badania<br> Pierwszorazowe <br>(PKK)</h1>
+											<p>Przeprowadź z nami swoje pierwszorazowe badania przed kursem prawa jazdy do profilu kandydata
+												na kierowcę (PKK)
+											</p>
+											<!-- <a class="read_more" href="#">Read more</a> -->
+										</div>
+									</div>
+									<div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+										<div class="images_box" style="padding: 25px;">
+											<figure><img src="images/driver.webp" style="border-radius:12px; "></figure>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container-fluid ">
+							<div class="carousel-caption">
+								<div class="row">
+									<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+										<div class="text-bg">
+											<h1>Badania<br> przedłużające <br>ważność<br>prawa jazdy</h1>
+											<p>Wykonamy badania które przedłużą ważność terminowego prawa jazdy (cukrzyca / padaczka / wada
+												wzroku / zatrzymanie
+												prawa jazdy po alkoholu) </p>
+											<!-- <a class="read_more" href="#">Read more</a> -->
+										</div>
+									</div>
+									<div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+										<div class="images_box" style="padding: 25px;">
+											<figure><img src="images/badania.webp" style="border-radius:12px; "></figure>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container-fluid">
+							<div class="carousel-caption ">
+								<div class="row">
+									<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+										<div class="text-bg">
+											<h1>Pojazdy <br>uprzywilejowane</h1>
+											<p>Wyonujemy również badania dla kierowców ubiegających się o uprawnienia do jazdy pojazdem
+												uprzywilejowanym </p>
+											<!-- <a class="read_more" href="#">Read more</a> -->
+										</div>
+									</div>
+									<div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+										<div class="images_box" style="padding: 25px;">
+											<figure><img src="images/ambulance.webp" style="border-radius:12px; "></figure>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+					<i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+				</a>
+				<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+					<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+				</a>
+			</div>
+			<!-- end banner -->
+			<!-- about -->
+			<div id="about" class="about">
+				<div class="container-fluid">
+					<div class="row d_flex">
+						<div class="col-md-5">
+							<div class="about_img">
+								<figure><img src="images/wojtek1.webp" alt="#" /></figure>
+							</div>
+						</div>
+						<div class="col-md-7">
+							<div class="titlepage">
+								<h2>Wykonujemy <span class="blu">badania</span></h2>
+								<p>
+									<strong>- pierwszorazowe przed kursem prawa jazdy do profilu kandydata na kierowcę (PKK)</strong><br>
+									- przedłużające
+									ważność terminowego prawa jazdy (cukrzyca / padaczka / wada wzroku / zatrzymanie prawa jazdy po
+									alkoholu)<br> -
+									kierowców ubiegających się o uprawnienia do jazdy pojazdem uprzywilejowanym<br>
+
+									<strong>Obecnie nie przeprowadzamy badań kierowców transportu drogowego / taxi.</strong>
+								</p>
+								<!-- <a class="read_more">Read More</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end about -->
+			<!-- choose  section -->
+			<div class="choose ">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="titlepage">
+								<h2>Dlaczego <span class="blu"> my?</span></h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="choose_bg">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 padding_right0">
+										<ul class="easy" style="font-size: 22px">
+											<li class="active"><a href="#">Łatwa rejestracja</a></li>
+											<li><a href="#">Dostępne terminy</a></li>
+											<li><a href="#">Fachowa obsługa</a></li>
+											<li><a href="#">Szeroki zakres usług</a></li>
+										</ul>
+									</div>
+									<div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 padding_left0">
+										<div class="choose_box">
+											<i><img src="images/admin.png" alt="#" /></i>
+											<h3> Ad Minim</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+												labore et dolore
+												magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+												ex ea commodo
+												consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+												fugiat nulla pariatur.
+												Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+												id est laborum."</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end choose  section -->
+			<!-- work -->
+			<div id="work" class="work">
+
+				<div class="container-fluid">
+					<div class="row d_flex">
+						<div class="col-md-7">
+							<div class="titlepage">
+								<h2>Zarejestruj<span class="blu"> wizytę</span></h2>
+								<form method="GET" action="/sign" role="search" type="search">
+									<div id="hour">
+										<input type="hidden" id="timeInput" name="time" class="date_output" >
+									</div>
+									<div id="datetimepicker">
+										<input type="hidden" id="dateInput" name="date" class="date_output" >
+									</div>
+									<div id="set-date">Wybierz datę</div>
+									<div>
+										<button class="send_btn" id="btn-rej" disabled @click="return q.value">Zarejestruj</button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="work_img">
+								<figure><img src="images/work_img.jpg" alt="#" /></figure>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end work -->
+			<!-- request -->
+			<div id="contact" class="request">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="titlepage">
+								<h2>Wyślij <span class="white">wiadomość</span></h2>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<form id="request" class="main_form">
+								<div class="row">
+									<div class="col-md-12 ">
+										<input class="contactus" placeholder="Full Name" type="type" name="Full Name">
+									</div>
+									<div class="col-md-12">
+										<input class="contactus" placeholder="Email" type="type" name="Email">
+									</div>
+									<div class="col-md-12">
+										<input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">
+									</div>
+									<div class="col-md-12">
+										<textarea class="textarea" placeholder="Message" type="type" Message="Name">Message </textarea>
+									</div>
+									<div class="col-md-12">
+										<button class="send_btn">Wyślij</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-md-6">
+							<div id="mapa" style="width:100%; height: 100%">
+								<iframe style="width:100%; height: 100%"
+									src="https://maps-cdn.site123.com/include/globalMapDisplay.php?q=Podpromie+8%2F2a%2C+Rzesz%C3%B3w%2C+Polska&z=15&l=en&ilfc=1"
+									frameborder="0"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end request -->
+			<%- include('../views/components/footer.ejs'); -%>
+
+		</div>
+		<div class="overlay"></div>
+		<!-- Javascript files-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/jquery-3.0.0.min.js"></script>
+		<!-- sidebar -->
+		<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script src="js/date-time-picker-component/dist/js/date-time-picker-component.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+		<script src="js/custom.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$("#sidebar").mCustomScrollbar({
+					theme: "minimal"
+				});
+
+				$('#dismiss, .overlay').on('click', function () {
+					$('#sidebar').removeClass('active');
+					$('.overlay').removeClass('active');
+				});
+
+				$('#sidebarCollapse').on('click', function () {
+					$('#sidebar').addClass('active');
+					$('.overlay').addClass('active');
+					$('.collapse.in').toggleClass('in');
+					$('a[aria-expanded=true]').attr('aria-expanded', 'false');
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function () {
+				$(".fancybox").fancybox({
+					openEffect: "none",
+					closeEffect: "none"
+				});
+
+				$(".zoom").hover(function () {
+
+					$(this).addClass('transition');
+				}, function () {
+
+					$(this).removeClass('transition');
+				});
+			});
+		</script>
+
+		<script>
+			let pl = {
+				'jan': 'Sty',
+				'feb': 'Lut',
+				'mar': 'Mar',
+				'apr': 'Kwi',
+				'may': 'Maj',
+				'jun': 'Cze',
+				'jul': 'Lip',
+				'aug': 'Sie',
+				'sep': 'Wrz',
+				'oct': 'Paź',
+				'nov': 'Lis',
+				'dec': 'Gru',
+				'jan_': 'Styczeń',
+				'feb_': 'Luty',
+				'mar_': 'Marzec',
+				'apr_': 'Kwiecień',
+				'may_': 'Maj',
+				'jun_': 'Czerwiec',
+				'jul_': 'Lipiec',
+				'aug_': 'Sierpień',
+				'sep_': 'Wrzesień',
+				'oct_': 'Październik',
+				'nov_': 'Listopad',
+				'dec_': 'Grudzień',
+				'mon': 'Pon',
+				'tue': 'Wt',
+				'wed': 'Śro',
+				'thu': 'Czw',
+				'fri': 'Pt',
+				'sat': 'Sob',
+				'sun': 'Ni',
+				'mon_': 'Poniedziałek',
+				'tue_': 'Wtorek',
+				'wed_': 'Środa',
+				'thu_': 'Czwartek',
+				'fri_': 'Piętek',
+				'sat_': 'Sobota',
+				'sun_': 'Niedziela',
+				'done': 'Done' // @since 1.1.0
+			};
+
+			let firstData = new Date().toJSON();
+			$('#datetimepicker').on('click', function () {
+				pickDate = $("#dateInput").val();
+
+					$("#hour").children().remove()
+					let hor = axios.get('http://localhost:8333/hours?date=' + (pickDate || firstData.substr(0, 10))
+					).then(r => {
+						$("#set-date").remove()
+						$("#btn-rej").removeAttr('disabled');
+						$("#hour").append(new DateTimePickerComponent.TimePicker('hour', {
+							hours_range: r.data,
+							start_date: new Date('2023-04-06T'+r.data[0]),
+						}));
+					})
+				}
+			);
+			let days = axios.get('http://localhost:8333/days').then(d => {
+
+				new DateTimePickerComponent.DatePicker('datetimepicker', {
+				l10n: pl,
+				set_dates: d.data,
+				start_date: new Date(d.data[0]),
+				first_day_no: 1,
+			});
+			})
+
+
+		</script>
+</body>
+
+</html>

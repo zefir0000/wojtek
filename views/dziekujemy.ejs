@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+<%- include('../views/components/head.ejs'); -%>
+
+	<!-- body -->
+
+	<body class="main-layout">
+
+		<!-- loader  -->
+		<div class="loader_bg">
+			<div class="loader"><img src="images/loading.gif" alt="#" /></div>
+		</div>
+		<!-- end loader -->
+		<div class="wrapper">
+			<!-- end loader -->
+			<%- include('../views/components/menu.ejs'); -%>
+
+				<div id="content">
+					<%- include('../views/components/header.ejs'); -%>
+						<div id="contact" class="request-sign">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="titlepage">
+											<h2>Dziękujemy</span></h2>
+
+										</div>
+										<div class="col-md-12" style="text-align: center;">
+											<h2 class="white"> Sprawdź e-mail gdzie poznasz wszytkie szczegóły</h2>
+										</div>
+										<div class="col-md-12" style="text-align: center;">
+											<h2 class="white">Do zobaczenia !</h2>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-2"></div>
+									<div class="col-md-8">
+										<form id="request-sign" class="main_form" method="GET" action="/">
+											<div class="row">
+
+												<div class="col-md-12">
+													<button class="send_btn">strona glowna</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- end request -->
+						<%- include('../views/components/footer.ejs'); -%>
+
+				</div>
+				<div class="overlay"></div>
+				<!-- Javascript files-->
+				<script src="js/jquery.min.js"></script>
+				<script src="js/popper.min.js"></script>
+				<script src="js/bootstrap.bundle.min.js"></script>
+				<script src="js/jquery-3.0.0.min.js"></script>
+				<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+				<!-- <script src="js/date-time-picker-component/dist/js/date-time-picker-component.min.js"></script> -->
+				<!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+
+				<script src="js/custom.js"></script>
+
+				<script type="text/javascript">
+					$(document).ready(function () {
+						$("#sidebar").mCustomScrollbar({
+							theme: "minimal"
+						});
+
+						$('#dismiss, .overlay').on('click', function () {
+							$('#sidebar').removeClass('active');
+							$('.overlay').removeClass('active');
+						});
+
+						$('#sidebarCollapse').on('click', function () {
+							$('#sidebar').addClass('active');
+							$('.overlay').addClass('active');
+							$('.collapse.in').toggleClass('in');
+							$('a[aria-expanded=true]').attr('aria-expanded', 'false');
+						});
+					});
+				</script>
+				<script>
+					$(document).ready(function () {
+						$(".fancybox").fancybox({
+							openEffect: "none",
+							closeEffect: "none"
+						});
+
+						$(".zoom").hover(function () {
+
+							$(this).addClass('transition');
+						}, function () {
+
+							$(this).removeClass('transition');
+						});
+					});
+				</script>
+
+	</body>
+
+</html>
